@@ -239,16 +239,17 @@ header svg{
 }
 .benefits .describtion .benefits-paragraph{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
 
 }
 .benefits .benefits-paragraph p{
-    /*font-size: 12px;*/
+    font-size: 12px;
     color: var(--grey-35, #59595A);
     font-weight: 400;
+    flex-grow: 1;
+    
 }
 .benefits .benefits-paragraph a{
    font-size: 15px;
@@ -257,6 +258,9 @@ header svg{
     border: 1px solid var(--white-95, #F1F1F3);
     background: var(--white-99, #FCFCFD);
     padding: 10px;
+    width:100px;
+    text-align: center;
+ 
 }
 .benefits .benefits-types{
     display: flex;
@@ -315,12 +319,13 @@ header svg{
 } 
 .introduction .course-paragraph{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 .course-paragraph p{
     color: var(--grey-35, #59595A);
+    font-size: 14px;
+    flex-grow: 1;
     
 }
 .course-paragraph a{
@@ -330,6 +335,8 @@ header svg{
     border-radius: 8px;
     border: 1px solid var(--white-95, #F1F1F3);
     background: var(--white-99, #FCFCFD); 
+    width:100px;
+    text-align: center;
 }
 .courses-information{
     margin-top:40px;
@@ -474,12 +481,319 @@ background: var(--white-97, #F7F7F8);
 padding: 10px 24px;
 font-weight: 700;
 }
+.our-pricing{
+    margin-top: 40px;
+}
+.pricing-introduction{
+    display:flex;
+    flex-direction: column;
+    gap:8px 0;
+}
+.pricing-paragraph{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pricing-paragraph .buttons{
+    width:160px;
+    border-radius: 8px;
+    background: var(--absolute-white, #FFF);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 0 10px;
+    align-items: center;
+}
+.buttons .monthly{
+    border-radius: 6px;
+background: var(--orange-50, #FF9500);
+padding: 10px;
+border: 1px solid #FF9500 ;
+color: #FFF;
+}
+.buttons .yearly{
+    border: 1px solid #FFF;
+    background-color: #fff;
+
+}
+.pricing-paragraph p{
+    flex-grow: 1;
+    color: var(--grey-35, #59595A);
+
+   
+}
+.features{
+    margin-top: 40px;
+    border-radius: 12px;
+    background: var(--absolute-white, #FFF);
+    padding: 40px;
+}
+.features .card{
+    border-radius: 12px;
+border: 1px solid var(--white-95, #F1F1F3);
+background: var(--white-99, #FCFCFD);
+padding: 20px 40px;
+display: flex;
+flex-direction: column;
+gap:30px 0;
+}
+.features .card h3{
+    border-radius: 6px;
+border: 1px solid var(--orange-90, #FFEACC);
+background: var(--orange-97, #FFF9F0);
+padding: 10px;
+text-align: center;
+font-size: 15px;
+}
+.features .card .amount span:first-of-type{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+.features .card .amount span:last-of-type{
+    font-size: 15px;
+}
+.amount{
+    text-align: center;
+}
+.available-feature{
+    border-radius: 14px 14px 0px 0px;
+border: 1px solid var(--white-95, #F1F1F3);
+background: var(--absolute-white, #FFF);
+padding: 20px 40px;
+display: flex;
+flex-direction: column;
+gap:20px 0;
+}
+.feature{
+    display: flex;
+    gap:0 5px;
+    border-radius: 8px;
+   border: 1px solid var(--white-95, #F1F1F3);
+   padding: 10px;
+   align-items: center;
+}
+.feature svg{
+    border-radius: 6px;
+    background: var(--orange-95, #FFF4E5);
+    width:15px;
+    padding: 3px;
+    box-sizing: content-box;
+}
+.feature p{
+    color: var(--grey-30, #4C4C4D);
+    font-size: 12px;
+}
+.available-feature h4{
+    text-align: center;
+}
+.card a{
+    border-radius: 0px 0px 8px 8px;
+background: var(--orange-50, #FF9500);
+padding: 10px;
+text-align: center;
+color: #FFF;
+font-size: 12px;
+margin-top: 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.features .row{
+    gap:0 20px;
+}
+.features .card{
+    width:calc((100% - 20px) / 2);
+}
+footer {
+    margin-top: 40px;
+    background: var(--absolute-white, #FFF);
+}
+footer .upper{
+    padding: 40px;
+    border-bottom: #efeff1 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+footer .left-side{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+}
+.left-side .logo img{
+    width:30px;
+}
+footer .left-side .company-information{
+    display: flex;
+    flex-direction: column;
+    gap:10px 0;
+}
+footer .left-side .company-information .connections{
+    display: flex;
+    gap:0 5px;
+    align-items: center;
+}
+
+.upper .left-side ,.upper .rigth-side{
+    width:calc(100% / 2);
+
+}
+.upper .rigth-side{
+    display: flex;
+    justify-content: space-between;
+    color: var(--Grey-15, #262626);
+    
+}
+.rigth-side .list , .rigth-side .social-media{
+    display: flex;
+    flex-direction: column;
+    gap:20px 0;
+}
+.list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+}
+.list ul a{
+    color: var(--Grey-35, #59595A);
+}
+.social-media .socail-types{
+    display: flex;
+    gap:0 10px;
+}
+.socail-types svg{
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-97, #F7F7F8);
+    width:20px;
+    height: 20px;
+    padding: 10px;
+    box-sizing: content-box;
+ 
+}
+.lower{
+    display: flex;
+    justify-content: center;
+    padding: 40px  0 10px 0;
+    align-items: flex-end;
+    color: var(--Grey-40, #656567);
+}
+@media screen and (min-width:1000px) and (max-width:1200px) {
+    .rigth-side h2{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen  and (min-width:706px) and (max-width:1022px){
+    .cousre-teacher{
+        flex-wrap: nowrap;
+    }
+    .course-type span{
+        font-size: 10px;
+        padding: 5px;
+        
+    }
+    .cousre-teacher h3{
+        font-size: 15px;
+    }
+    
+}
 @media screen and (min-width:706px) and (max-width:1000px){
     .companies .img-slider{
         overflow-x: auto;
     }
     .companies .company{
         width:100%;
+    }
+    .about-person{
+        padding: 10px 20px;
+    }
+    .about-person img{
+        width:50px;
+        height: 40px;
+    }
+
+    .full-story a{
+        font-size: 12px;
+        padding: 10px 15px;
+
+    }
+    .person-name h3{
+        font-size: 16px;
+    }
+    .person-name{
+        gap: 0 5px;
+    }
+    .about-job{
+        padding: 40px 30px;
+    }
+    .cousre-teacher{
+        flex-wrap: nowrap;
+    }
+    .course-type span{
+        font-size: 10px;
+        padding: 5px;
+        
+    }
+    .cousre-teacher h3{
+        font-size: 15px;
+    }
+    .features .row .card{
+      
+        padding: 15px 30px;
+    }
+     .features .row .card h3{
+        font-size: 8px;
+        width: 100%;
+    }
+    .features .card .amount span:first-of-type{
+        font-size: 20px;
+    }
+    .features .card .amount span:last-of-type{
+        font-size: 10px;
+    }
+    .available-feature{
+        padding: 10px 10px;
+    }
+    .feature{
+        padding: 5px;
+    }
+    .available-feature h4{
+        font-size:10px;
+    }
+    .available-feature .feature p{
+        font-size: 13px;
+    }
+    .available-feature .feature svg{
+        width:20px;
+        padding: 2px;
+    }
+    
+    .upper .left-side p{
+        font-size: 12px;
+    
+        
+    }
+    .upper .left-side svg{
+        width:15px;
+    }
+    .upper .rigth-side{
+        gap: 0 15px;
+    }
+    .upper .rigth-side h2{
+        font-size: 15px;
+    }
+    .upper .rigth-side a{
+        font-size: 12px;
+    }
+    .upper .rigth-side .socail-types svg{
+        width:15px;
+        
     }
     
 }
@@ -565,8 +879,16 @@ font-weight: 700;
 .benefits-types .type{
     width:100%;
 }
+.benefits-paragraph{
+    flex-wrap: wrap;
+    gap:10px 0;
+}
 .course-paragraph{
  gap: 10px 0;
+ flex-wrap: wrap;
+}
+.course-paragraph  a{
+    font-size: 10px;
 }
 .courses-information .row{
     flex-wrap: wrap;
@@ -587,11 +909,11 @@ font-weight: 700;
     font-size: 10px;
 }
 .cousre-teacher{
-    gap:5px 0;
+    gap:8px 0;
     align-items: center;
 }
 .cousre-teacher h3{
-    font-size: 16px;
+    font-size: 12px;
 }
 .testimonial{
     width:100%;
@@ -599,6 +921,150 @@ font-weight: 700;
 }
 .testimonials .row{
     flex-wrap: wrap;
+}
+.person-name h3{
+    font-size: 10px;
+}
+.full-story{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.full-story a{
+    
+    padding: 10px 15px;
+    font-size: 8px;
+    
+}
+.about-person{
+    display: flex;
+    
+    align-items: center;
+    
+
+}
+.person-name{
+    gap: 0 5px;
+}
+.person-name img{
+    width:40px;
+    height: 30px;
+}
+.person-name , .full-story {
+    width:calc(100% / 2);
+}
+.about-person{
+    padding: 10px 10px;
+}
+.about-job{
+    padding: 30px 20px;
+}
+.about-job p{
+    font-size: 12px;
+}
+.pricing-paragraph{
+    flex-wrap: wrap;
+    gap:10px 0;
+}
+.pricing-paragraph p{
+    flex-grow: 0;
+}
+.pricing-paragraph .buttons{
+    margin: auto;
+}
+.features{
+    padding: 20px;
+}
+.features .row{
+    flex-wrap: wrap;
+    gap:20px 0;
+}
+.features .row .card{
+    width:100%;
+    padding: 10px 20px;
+}
+ .features .row .card h3{
+    font-size: 8px;
+    width: 100%;
+}
+.features .card .amount span:first-of-type{
+    font-size: 20px;
+}
+.features .card .amount span:last-of-type{
+    font-size: 10px;
+}
+.available-feature{
+    padding: 10px 10px;
+}
+.feature{
+    padding: 5px;
+}
+.available-feature h4{
+    font-size:10px;
+}
+.available-feature .feature p{
+    font-size: 10px;
+}
+.available-feature .feature svg{
+    width:10px;
+    padding: 2px;
+}
+
+footer .upper{
+    flex-wrap: wrap;
+    gap:20px 0;
+    padding: 10px 0;
+  
+    justify-content: flex-start;
+  
+}
+.upper .rigth-side{
+    flex-wrap: wrap;
+}
+ .upper .left-side ,.upper .rigth-side{
+    width:100%;
+}
+.upper .rigth-side{
+    gap:0 20px;
+}
+.upper .rigth-side h2{
+    font-size: 10px;
+}
+.upper .rigth-side .socail-types svg{
+    width:15px;
+}
+
+footer .container{
+   
+    width:calc(100% - 20px);
+}
+.upper .rigth-side ul{
+    gap: 0 30px;
+}
+.upper .rigth-side ul a{
+    font-size:7px ;
+}
+.upper .rigth-side{
+    gap: 0 5px;
+}
+.upper .rigth-side .socail-types svg{
+    width:10px;
+    height:10px;
+    padding: 5px;
+
+}
+
+.rigth-side .social-media .socail-types{
+    gap:0 5px;
+}
+.upper .rigth-side .list , .upper .rigth-side .social-media{
+    gap:10px 0;
+}
+.lower{
+    padding:10px 0 4px 0;
+}
+.lower p{
+    font-size: 10px;
 }
 
 }
