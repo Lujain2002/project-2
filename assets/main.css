@@ -385,7 +385,7 @@ header svg {
     border-radius: 8px;
     border: 1px solid var(--white-95, #F1F1F3);
     background: var(--white-99, #FCFCFD);
-    width: 100px;
+    width: 120px;
     text-align: center;
 }
 
@@ -483,6 +483,8 @@ header svg {
 
 .testimonials-paragraph p {
     color: var(--grey-35, #59595A);
+    flex-grow: 1;
+    width:1000px;
 }
 
 .testimonials-paragraph a {
@@ -492,6 +494,8 @@ header svg {
     border: 1px solid var(--white-95, #F1F1F3);
     background: var(--white-99, #FCFCFD);
     padding: 10px;
+    width:100px;
+    text-align:center ;
 }
 
 .testimonials {
@@ -594,6 +598,7 @@ header svg {
 .buttons .yearly {
     border: 1px solid #FFF;
     background-color: #fff;
+    color: #262626;
 
 }
 
@@ -662,6 +667,9 @@ header svg {
     padding: 10px;
     align-items: center;
 }
+.card .available-feature .special svg{
+    background: var(#FFF4E5);
+}
 
 .feature svg {
     border-radius: 6px;
@@ -670,6 +678,11 @@ header svg {
     padding: 3px;
     box-sizing: content-box;
 }
+.card .available-feature .special svg{
+    background-color:#fff;
+    border: 1px solid var(--White-95, #F1F1F3);
+}
+
 
 .feature p {
     color: var(--grey-30, #4C4C4D);
@@ -863,6 +876,12 @@ footer .left-side .company-information .connections {
         padding: 5px;
 
     }
+    .benefits .benefits-paragraph a{
+        font-size: 10px;
+    }
+    .course-paragraph a{
+        font-size: 10px;
+    }
 
     .cousre-teacher h3 {
         font-size: 15px;
@@ -933,6 +952,8 @@ footer .left-side .company-information .connections {
         width: 15px;
 
     }
+
+
 
 }
 
@@ -1044,6 +1065,8 @@ footer .left-side .company-information .connections {
 
     .course-paragraph a {
         font-size: 10px;
+        width:100px;
+        
     }
 
     .courses-information .row {
@@ -1085,7 +1108,10 @@ footer .left-side .company-information .connections {
     .testimonials .row {
         flex-wrap: wrap;
     }
-
+    .testimonials-paragraph{
+        gap:10px 0;
+    }
+   
     .person-name h3 {
         font-size: 10px;
     }
@@ -1267,6 +1293,41 @@ footer .left-side .company-information .connections {
 
     .lower p {
         font-size: 10px;
+    }
+    @media screen and (min-width:320px) and (max-width:500px) {
+        .rigth-side{
+            justify-content: flex-start;
+        }
+        .rigth-side .list{
+            width:calc((100% - 5px) / 2);
+           
+        }
+        .rigth-side .list h2{
+            font-size: 15px;
+        }
+        .rigth-side .list ul a{
+            font-size: 10px;
+        }
+        .rigth-side .social-media{
+            width:100%;
+            margin-top: 10px;
+            
+        }
+        .rigth-side .social-media h2{
+            font-size: 15px;
+        }
+        .rigth-side .social-media .socail-types{
+            gap:0 10px;
+
+        }
+        .left-side p{
+            font-size: 10px;
+        }
+        .left-side svg{
+            width:15px;
+            height: 15px;
+        }
+        
     }
 
 }
